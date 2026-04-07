@@ -3,45 +3,39 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     android:padding="32dp"
-    android:visibility="visible">
+    android:gravity="center">
 
-
+    <!-- Logo -->
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginBottom="40dp"
-        android:contentDescription="Logo de la aplicación"
-        android:rotation="200"
-        android:rotationX="165"
-        android:rotationY="-124"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Logo de la aplicación" />
 
-
+    <!-- Login -->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:hint="Login"
         android:inputType="text"
-        android:rotationX="1" />
+        android:layout_marginBottom="16dp" />
 
-
+    <!-- PassWord -->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:hint="Contraseña"
+        android:hint="PassWord"
         android:inputType="textPassword"
-        android:rotation="-180" />
+        android:layout_marginBottom="24dp" />
 
-
+    <!-- Inicio de sesión -->
     <Button
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#0B0000"
-        android:text="Iniciar Sesion" />
+        android:text="Inicio de sesión" />
 
 </LinearLayout>
